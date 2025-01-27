@@ -1,0 +1,2666 @@
+﻿<!DOCTYPE html>
+
+<head>
+  <title>ПРОГРАМА СПІВПРАЦІ ІНСТРУКТОР-КІНОЛОГ Royal Canin</title>
+  <meta
+    name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+  <html lang="uk_UA">
+    <meta charset="utf-8" />
+
+    <!-- <script
+      src="../../scripttemplates/otSDKStub.js"
+      data-document-language="true"
+      type="text/javascript"
+      charset="UTF-8"
+      data-domain-script="eb79ef05-27b0-4603-a717-a773eefce93a"></script> -->
+
+    <link
+      id="royal-canin"
+      rel="stylesheet"
+      type="text/css"
+      href="../../8-12-1/royal-canin.styles.prefix.min.critical.css" />
+
+    <script
+      type="text/javascript"
+      src="../../8-12-1/royal-canin.min.bundle.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="../../ajax/libs/prism/1.15.0/themes/prism.min.css"
+      integrity="sha256-N1K43s+8twRa+tzzoF3V8EgssdDiZ6kd9r8Rfgg8kZU="
+      crossorigin="anonymous" />
+    <script
+      src="../../ajax/libs/prism/1.15.0/prism.min.js"
+      integrity="sha256-jc6y1s/Y+F+78EgCT/lI2lyU7ys+PFYrRSJ6q8/R8+o="
+      crossorigin="anonymous"></script>
+    <script
+      src="../../ajax/libs/prism/1.15.0/components/prism-markup.min.js"
+      integrity="sha256-QciVGr0G0qBC7iVqTH0zo6B2h4sFTL5iyxA3vO0Mu2M="
+      crossorigin="anonymous"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NCWZQ3");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <style media="screen">
+      @media screen and (max-width: 600px) {
+        #wrap {
+          visibility: hidden;
+          display: none;
+        }
+      }
+
+      /* ---------- Slider-start ----------*/
+
+      .slider {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slider__wrapper {
+        display: flex;
+        transition: transform 0.6s ease;
+      }
+
+      .slider__item {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+      }
+
+      .slider__control {
+        position: absolute;
+        top: 50%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        color: #fff;
+        text-align: center;
+        opacity: 0.5;
+        height: 50px;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .slider__control_show {
+        display: flex;
+      }
+
+      .slider__control:hover,
+      .slider__control:focus {
+        color: #fff;
+        text-decoration: none;
+        outline: 0;
+        opacity: 0.9;
+      }
+
+      .slider__control_left {
+        left: 0;
+      }
+
+      .slider__control_right {
+        right: 0;
+      }
+
+      .slider__control::before {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: transparent no-repeat center center;
+        background-size: 100% 100%;
+      }
+
+      .slider__control_left::before {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+      }
+
+      .slider__control_right::before {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+      }
+
+      .slider__item > div {
+        line-height: 250px;
+        font-size: 100px;
+        text-align: center;
+      }
+
+      .points {
+        position: absolute;
+        width: 200px !important;
+        height: 200px;
+        z-index: 100000;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+        background: rgba(0, 0, 0, 0);
+        transition: background 0.3s ease-out;
+      }
+
+      .points > p {
+        margin: 0;
+        font-size: 30px;
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+      }
+
+      .class:hover .points {
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .class:hover .points > p {
+        opacity: 1;
+        min-width: 100%;
+      }
+
+      .class {
+        margin: 0 auto;
+        border: 1px solid red;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 200px !important;
+        height: 200px;
+        position: relative;
+      }
+
+      /* ---------- Slider-end ----------*/
+
+      /* ----------- Non-Retina Screens ----------- */
+      @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+        #cat {
+          max-width: 100%;
+          max-height: initial;
+          float: none;
+          margin: 0 auto;
+        }
+      }
+
+      /* ----------- Retina Screens ----------- */
+      @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+        #cat {
+          max-width: 100%;
+          max-height: initial;
+          float: none;
+          margin: 0 auto;
+        }
+      }
+
+      /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+      /* Portrait and Landscape */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+        #cat {
+          max-width: 100%;
+          max-height: 320px;
+          float: none;
+          margin: 0 auto;
+        }
+
+        .slider_article {
+          height: 300px;
+          border: none !important;
+          max-width: 126px;
+          margin: 0 10px;
+        }
+      }
+
+      @media screen and (min-width: 320px) {
+        img {
+          max-width: 100%;
+          margin-bottom: 58px;
+        }
+
+        .class {
+          border: 1px solid red;
+          border-radius: 50%;
+          overflow: hidden;
+          width: 100px !important;
+          height: 100px;
+          position: relative;
+        }
+
+        .points {
+          position: absolute;
+          width: 100px !important;
+          height: 100px;
+          z-index: 100000;
+          color: white;
+          text-align: center;
+          vertical-align: middle;
+          background: rgba(0, 0, 0, 0);
+          transition: background 0.3s ease-out;
+        }
+
+        .points > p {
+          margin: 0;
+          font-size: 13px;
+          color: white;
+          opacity: 0;
+          transition: opacity 0.3s ease-out;
+        }
+
+        .points > p > span {
+          min-width: 100%;
+          display: block;
+          font-size: 20px;
+        }
+
+        .rc-styled-link--cta {
+          display: inline-block;
+          margin: 0;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        .class {
+          border-radius: 50%;
+          overflow: hidden;
+          width: 200px !important;
+          height: 200px;
+          position: relative;
+        }
+
+        .points {
+          position: absolute;
+          width: 200px !important;
+          height: 200px;
+          z-index: 100000;
+          color: white;
+          text-align: center;
+          vertical-align: middle;
+          background: rgba(0, 0, 0, 0);
+          transition: background 0.3s ease-out;
+        }
+
+        .points > p {
+          margin: 0;
+          font-size: 25px;
+          color: white;
+          opacity: 0;
+          transition: opacity 0.3s ease-out;
+        }
+
+        .points > p > span {
+          display: block;
+          font-size: 40px;
+        }
+      }
+    </style>
+  </html>
+</head>
+
+<body class="rc-bg-colour--brand0 rc-template rc-template--pdp" style="">
+  <!-- Header bar -->
+  <header class="rc-header" data-js-header-scroll="">
+    <nav class="rc-header__nav rc-header__nav--primary">
+      <ul
+        class="rc-list rc-list--blank rc-list--inline rc-list--align"
+        role="menubar">
+        <li class="rc-list__item">
+          <button
+            class="rc-btn rc-btn--icon-label rc-icon rc-menu--xs rc-iconography rc-md-up"
+            data-modal-trigger="main-nav-modal"
+            aria-label="Menu">
+            Меню
+          </button>
+          <button
+            class="rc-btn rc-btn--icon rc-icon rc-menu--xs rc-iconography rc-md-down"
+            data-js-trigger="mobile-push-nav"
+            aria-label="Menu">
+            <span class="rc-screen-reader-text">Menu</span>
+          </button>
+        </li>
+      </ul>
+
+      <a href="https://www.royalcanin.com/ua" class="rc-header__brand">
+        <span class="rc-screen-reader-text">Royal Canin Logo</span>
+        <object
+          id="header__logo"
+          class="rc-header__logo"
+          type="image/svg+xml"
+          data="../../8-12-1/logo--animated.svg"
+          data-js-import-interactive-svg="">
+          <img
+            alt="Royal Canin logo"
+            height="100"
+            src="../../8-12-1/1x1.gif"
+            style="
+              background-image: url(https://dl.royalcanin.com/8-12-1/logo--animated.png);
+            "
+            width="135" />
+        </object>
+      </a>
+
+      <ul
+        class="rc-list rc-list--blank rc-list--inline rc-list--align rc-header__right"
+        role="menubar">
+        <li class="rc-list__item">
+          <button
+            data-js-trigger="search-bar"
+            class="rc-btn rc-btn--icon rc-icon rc-search--xs rc-iconography"
+            aria-label="Search">
+            <span class="rc-screen-reader-text">Пошук</span>
+          </button>
+        </li>
+      </ul>
+
+      <form
+        class="rc-header__search-bar rc-hidden"
+        data-js-target="search-bar"
+        autocomplete="off">
+        <button
+          class="rc-btn rc-btn--icon rc-icon rc-search--xs rc-iconography rc-stick-left rc-vertical-align"
+          type="submit"
+          aria-label="Search">
+          <span class="rc-screen-reader-text">Пошук</span>
+        </button>
+        <input
+          data-js-autocomplete=""
+          class="rc-header__input"
+          placeholder="Почніть вводити пошуковий запит"
+          id="header-search"
+          type="search"
+          value="" />
+        <label for="header-search">
+          <span class="rc-screen-reader-text"
+            >Почніть вводити пошуковий запит</span
+          >
+        </label>
+        <button
+          data-js-trigger="search-bar"
+          class="rc-btn rc-btn--icon rc-icon rc-close--xs rc-iconography rc-stick-right rc-vertical-align"
+          type="button"
+          aria-label="Close">
+          <span class="rc-screen-reader-text">Закрити</span>
+        </button>
+      </form>
+    </nav>
+
+    <nav class="rc-header__nav rc-header__nav--secondary rc-md-up">
+      <ul
+        class="rc-list rc-list--blank rc-list--inline rc-list--align rc-header__center">
+        <li class="rc-list__item">
+          <ul
+            class="rc-list rc-list--blank rc-list--inline rc-list--align rc-header__center">
+            <li class="rc-list__item">
+              <a class="rc-list__header" href="/">Breeders club</a>
+            </li>
+          </ul>
+        </li>
+        <li class="rc-list__item">
+          <ul
+            class="rc-list rc-list--blank rc-list--inline rc-list--align rc-header__center">
+            <li class="rc-list__item">
+              <a class="rc-list__header" href="/dogs">Заводчикам собак</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="rc-list__item">
+          <ul
+            class="rc-list rc-list--blank rc-list--inline rc-list--align rc-header__center">
+            <li class="rc-list__item">
+              <a class="rc-list__header" href="/cats">Заводчикам котів</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Mega Menu -->
+  <div data-js-modal-menu="">
+    <header class="rc-modal__header rc-md-up">
+      <button
+        class="rc-modal__close rc-btn rc-btn--icon-label rc-icon rc-close--xs rc-iconography"
+        data-modal-trigger="main-nav-modal">
+        Закрити
+      </button>
+      <object
+        id="main-logo"
+        data="../../8-12-1/logo--crown.svg"
+        type="image/svg+xml"
+        class="rc-modal__logo"
+        data-js-import-interactive-svg="">
+        <img
+          src="../../8-12-1/1x1.gif"
+          style="
+            background-image: url(https://dl.royalcanin.com/8-12-1/logo--crown.png);
+          "
+          width="150"
+          height="100"
+          alt="Royal Canin logo" />
+      </object>
+    </header>
+    <section class="rc-max-width--xl">
+      <div class="rc-column rc-lg-up rc-padding--lg">
+        <h1 class="rc-gamma rc-padding-x--md">
+          Приєднуйся до клубу професіоналів вже зараз та отримуй безліч переваг
+        </h1>
+        <img
+          class="rc-padding--sm"
+          src="../../images/catdogmobile.jfif"
+          alt="Royal Canin кіт та собака" />
+      </div>
+      <nav
+        class="rc-nav rc-hidden"
+        data-toggle-group="mobile"
+        data-toggle-effect="rc-expand--horizontal"
+        data-js-target="mobile-push-nav">
+        <div class="rc-layout-container rc-three-column rc-feedback-padding">
+          <div
+            class="rc-column rc-double-width rc-padding-x--none--mobile rc-padding-right--none">
+            <ul
+              class="rc-list rc-list--blank rc-list--align rc-list--two-column"
+              role="menubar"
+              data-component="nav-track"
+              data-nav-name="Header navigation">
+              <li class="rc-list__item rc-list__item--group">
+                <a
+                  class="rc-list__header"
+                  id="nav-header-1"
+                  data-toggle="nav-list-1"
+                  href="/cats"
+                  role="menuitem"
+                  >Заводчикам котів</a
+                >
+                <ul
+                  class="rc-list rc-list--blank rc-list--align"
+                  id="nav-list-1"
+                  aria-labelledby="nav-header-1"
+                  role="menu">
+                  <li class="rc-list__item rc-md-down">
+                    <button
+                      class="rc-list__link rc-icon rc-left--xs rc-iconography"
+                      data-toggle="nav-list-1"
+                      role="button"
+                      href="#/">
+                      Назад
+                    </button>
+                  </li>
+                  <li class="rc-list__item rc-md-down">
+                    <a
+                      href="/cats"
+                      class="rc-list__header"
+                      title="Cats"
+                      role="menuitem"
+                      >Заводчикам котів</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/cats/pro-products"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Products"
+                      >Раціони PRO для котів</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/cats/kit-program"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Breeds"
+                      >Програма «Здоровий старт»</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/cats/bonus"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Thinking of getting a cat"
+                      >Оновлена бонусна програма</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/cats/learning"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Thinking of getting a cat"
+                      >Семінари, вебінари, конференції та інші навчальні заходи
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="rc-list__item rc-list__item--group">
+                <a
+                  class="rc-list__header"
+                  id="nav-header-2"
+                  data-toggle="nav-list-2"
+                  href="/dogs"
+                  role="menuitem"
+                  >Заводчикам собак</a
+                >
+                <ul
+                  class="rc-list rc-list--blank rc-list--align"
+                  id="nav-list-2"
+                  aria-labelledby="nav-header-2"
+                  role="menu">
+                  <li class="rc-list__item rc-md-down">
+                    <button
+                      class="rc-list__link rc-icon rc-left--xs rc-iconography"
+                      data-toggle="nav-list-2"
+                      role="button"
+                      href="#/">
+                      Назад
+                    </button>
+                  </li>
+                  <li class="rc-list__item rc-md-down">
+                    <a
+                      href="/dogs"
+                      class="rc-list__header"
+                      title="Dogs"
+                      role="menuitem"
+                      >Заводчикам собак</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/dogs/pro-products"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Products"
+                      >Раціони PRO для собак</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/dogs/kit-program"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Breeds"
+                      >Програма «Здоровий старт»</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/dogs/bonus"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Thinking of getting a dog"
+                      >Оновлена бонусна програма</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/dogs/learning"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Thinking of getting a cat"
+                      >Семінари, вебінари, конференції та інші навчальні заходи
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="rc-list__item rc-list__item--group">
+                <a
+                  class="rc-list__header"
+                  id="nav-header-4"
+                  data-toggle="nav-list-4"
+                  href="https://www.royalcanin.com/ua/about-us"
+                  role="menuitem"
+                  >Про нас</a
+                >
+                <ul
+                  class="rc-list rc-list--blank rc-list--align"
+                  id="nav-list-4"
+                  aria-labelledby="nav-header-4"
+                  role="menu">
+                  <li class="rc-list__item rc-md-down">
+                    <button
+                      class="rc-list__link rc-icon rc-left--xs rc-iconography"
+                      data-toggle="nav-list-4"
+                      role="button"
+                      href="#/">
+                      Назад
+                    </button>
+                  </li>
+                  <li class="rc-list__item rc-md-down">
+                    <a
+                      href="https://www.royalcanin.com/ua/about-us"
+                      class="rc-list__header"
+                      title="About us"
+                      role="menuitem"
+                      >Про нас</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="https://www.royalcanin.com/ua/about-us/our-history#Our history"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Our history"
+                      >Наша історія</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="https://breeders.royalcanin.com.ua/"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Breeders Programme"
+                      >Програма для заводчиків</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="https://www.royalcanin.com/ua/about-us/our-values#Our values"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Our values"
+                      >Наші цінності</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="https://www.royalcanin.com/ua/about-us/sustainability#Sustainability"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Sustainability"
+                      >Сталий розвиток</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="https://www.royalcanin.com/ua/about-us/quality-and-food-safety#Quality and food safety"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Quality and food safety"
+                      >Якість і безпека корму</a
+                    >
+                  </li>
+                  <li class="rc-list__item"></li>
+                  <li class="rc-list__item"></li>
+                  <li class="rc-list__item">
+                    <a
+                      href="https://www.royalcanin.com/ua/about-us/faqs#FAQs"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="FAQs"
+                      >Поширені запитання</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="rc-column rc-padding-x--none">
+            <ul
+              class="rc-list rc-list--blank rc-list--align rc-btn-offset--top"
+              role="menu"
+              data-component="nav-track"
+              data-nav-name="Header navigation">
+              <li class="rc-list__item">
+                <a
+                  href="/contacts/"
+                  class="rc-list__link rc-icon rc-email--xs rc-iconography"
+                  data-ref="nav-link"
+                  role="menuitem"
+                  title="Contact us"
+                  >Зв’яжіться з нами</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </div>
+
+  <main class="rc-content--fixed-header">
+    <!-- Component Wrapper -->
+
+    <div
+      class="rc-layout-container rc-one-column rc-content-h-middle"
+      id="wrap">
+      <div class="rc-column" style="margin: 0">
+        <picture class="rc-full-width">
+          <source
+            srcset="images/1920x1080_dressyruvanny_.jpg"
+            media="(min-width: 1500px)" />
+          <source
+            srcset="images/1920x1080_dressyruvanny_.jpg"
+            media="(min-width: 600px)" />
+          <img
+            class="rc-full-width"
+            src="images/1920x1080_dressyruvanny_.jpg"
+            alt="#" />
+        </picture>
+      </div>
+    </div>
+
+    <div
+      class="rc-layout-container rc-two-column rc-max-width--xl rc-content-h-middle rc-padding-y--md">
+      <div class="rc-column">
+        <picture class="rc-full-width">
+          <source
+            srcset="images/1920x1080_dressyruvanny_2.jpg"
+            media="(min-width: 1500px)" />
+          <source
+            srcset="images/1920x1080_dressyruvanny_2.jpg"
+            media="(min-width: 600px)" />
+          <img
+            class="rc-full-width"
+            src="images/1920x1080_dressyruvanny_2.jpg"
+            alt="#" />
+        </picture>
+      </div>
+      <div class="rc-column">
+        <ul class="rc-list">
+          <li class="rc-list__item rc-large-intro">
+            Спеціалізовані раціони для спортивних та робочих собак
+          </li>
+          <li class="rc-list__item rc-large-intro">
+            Раціони за спеціальною ціною
+          </li>
+          <li class="rc-list__item rc-large-intro">
+            Участь у навчальних заходах
+          </li>
+          <li class="rc-list__item rc-large-intro">
+            Спонсорування змагань та чемпіонатів
+          </li>
+          <li class="rc-list__item rc-large-intro">
+            Стартові набори для цуценят
+          </li>
+          <li class="rc-list__item rc-large-intro">Брендування</li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      class="rc-layout-container rc-two-column rc-max-width--xl rc-content-h-middle">
+      <div class="rc-column">
+        <div>
+          <h1 class="rc-alpha">ДЛЯ ПРИЄДНАННЯ ДО СПІВПРАЦІ*:</h1>
+          <ol class="rc-list">
+            <li class="rc-list__item rc-large-intro">
+              Зв'яжіться з менеджером
+            </li>
+            <li class="rc-list__item rc-large-intro">Залиште свої контакти</li>
+          </ol>
+          <p>
+            *Для приєднання до програми необхідно мати посвідчення
+            інструктора-кінолога
+          </p>
+          <button
+            type="button"
+            class="rc-btn rc-btn--two"
+            data-modal-trigger="full-modal-example">
+            Контакти менеджерів
+          </button>
+        </div>
+      </div>
+      <div class="rc-column">
+        <picture>
+          <source srcset="images/GERMAN" media="(min-width: 1500px)" />
+          <source srcset="images/GERMAN" media="(min-width: 600px)" />
+          <img
+            class="rc-full-width"
+            src="images/GERMAN%20SHEPHERD%20PUPPY%20_%20BRAND%20-%20_BREED%20EMBLEMATIC.jpg"
+            alt="#" />
+        </picture>
+      </div>
+    </div>
+
+    <div
+      class="rc-layout-container rc-one-column rc-max-width--xl rc-content-h-middle">
+      <div class="rc-column" style="margin: 0">
+        <div class="rc-content-h-middle rc-text--center rc-padding-x--sm">
+          <h2 class="rc-alpha rc-alpha--impact">
+            ПОДАРУНКОВІ НАБОРИ ДЛЯ ЦУЦЕНЯТ
+          </h2>
+          <p class="rc-large-intro">
+            ЗАРЕЄСТРУЙ НОВОГО УЧНЯ-ЦУЦЕНЯ — ОТРИМАЙ ДОДАТКОВІ БАЛИ!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="rc-layout-container rc-two-column rc-max-width--xl rc-content-h-middle">
+      <div class="rc-column">
+        <picture class="rc-full-width">
+          <source
+            srcset="images/1080x720_rc-kit-pack.jpg"
+            media="(min-width: 1500px)" />
+          <source
+            srcset="images/1080x720_rc-kit-pack.jpg"
+            media="(min-width: 600px)" />
+          <img
+            class="rc-full-width"
+            src="images/1080x720_rc-kit-pack.jpg"
+            alt="#" />
+        </picture>
+      </div>
+      <div class="rc-column">
+        <div>
+          <p class="rc-alpha">ФІКСОВАНА ЗНИЖКА 8%*</p>
+          <p class="rc-large-intro">
+            (*знижка надається на закупівлю раціонів для потреб власних тварин)
+            <span class="Brand1"></span>
+          </p>
+          <!--<p class="rc-large-intro">За рекомендацію новим власникам: <span class="Brand1">1-3%</span></p>-->
+          <button
+            class="rc-btn rc-btn--one"
+            data-modal-trigger="modal-example1">
+            РЕЄСТРАЦІЯ
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="rc-layout-container rc-two-column rc-max-width--xl rc-content-h-middle rc-reverse-layout-mobile">
+      <div class="rc-column">
+        <div>
+          <p class="rc-large-intro">УВАГА! СЕЗОННА ПРОПОЗИЦІЯ!</p>
+          <h2 class="rc-alpha">ТОВАРИ ЗА БАЛИ</h2>
+          <p>
+            Знімай цікаві відео про дресирування або створюй фото-публікації з
+            рекомендаціями
+          </p>
+          <p>
+            Інтегруй інформацію про раціони Royal Canin у відео або
+            фото-публікації
+          </p>
+          <p>
+            Залишай відгуки про раціони або включай у відео/фото упаковку корму,
+            або тренування разом із Royal Canin
+          </p>
+          <p><br /><b>НАКОПИЧУЙ БАЛИ</b> на одяг та амуніцію:</p>
+          <p>
+            5 балів = 1 кг корму Роял Канін - (*купуйте раціони для цуценят та
+            дорослих собак Роял Канін - отримуйте бали. Враховуються всі раціони
+            крім ветеринарних дієт Роял Канін. Максимально можливо накопичити
+            3000 балів).<br />
+            <!--500 балів за залучення кінолога в заходах Роял Канін як Амбасадора бренду</br>-->
+            200 балів за кожну нову вдалу реєстрацію нового власника<br />
+            100 балів за залучення до співпраці нового партнера<br />
+            50 балів за кожне використання купону на знижку новим власником в
+            інтернет-магазині протягом трьох місяців
+            <!--<a class="rc-styled-link " href="https://royalcanin-otzyvy.com.ua">royalcanin-otzyvy.com.ua </a> </br>-->
+            <br />
+          </p>
+
+          <h2 class="rc-alpha">ЯК ЦЕ ПРАЦЮЄ?</h2>
+          <ul class="rc-list">
+            <li class="rc-list__item">
+              5 балів = 1 кг корму Роял Канін – (*купуйте раціони для цуценят та
+              дорослих собак Роял Канін - отримуйте бали. Враховуються всі
+              раціони крім ветеринарних дієт Роял Канін. Максимально можливо
+              накопичити 3000 балів).
+            </li>
+            <!-- <li class="rc-list__item">500 балів = участь в заходах Royal Canin як  Амбасадор бренду (дні адопції, змагання, тощо) </li>-->
+            <!--<li class="rc-list__item">300 балів = мінімум три змістовні публікації на квартал на Facebook чи Instagram – знімай відео про дресирування або виховання. Додавай у відео інформацію про корм та бренд Royal Canin, завантажуй відео на своїй сторінці у Facebook чи Instagram. Позначай в описі наші офіційні сторінки <a class="rc-styled-link " href="https://facebook.com/Royal.Canin.Ukraine"> www.facebook.com/Royal.Canin.Ukraine </a> або <a class="rc-styled-link " href="https://instagram.com/royalcanin.ua">www.instagram.com/royalcanin.ua </a>. Отримуй бали! </li>-->
+            <li class="rc-list__item">
+              200 балів = кожна нова вдала реєстрація нового цуценяти чи собаки.
+              Вдалою вважається реєстрація, коли власник собаки (цуценя)
+              зареєструвався на нашому сайті та зробив першу покупку в
+              інтернет-магазині
+            </li>
+            <li class="rc-list__item">
+              100 балів = залучення до співпраці нового партнера кінолога або
+              заводчика
+            </li>
+            <li class="rc-list__item">
+              50 балів = кожна наступна покупка від власника нової собаки
+              (цуценя) протягом трьох місяців в інтернет-магазині Royal Canin
+            </li>
+          </ul>
+
+          <a
+            href="https://docs.google.com/spreadsheets/d/16SpzmvKDF8gy2iChIVzAhC6CVsWN1siVsu1YYSTiiXM/edit#gid=0"
+            type="button"
+            class="rc-btn rc-btn--two"
+            >ДЕТАЛЬНІШЕ</a
+          >
+          <button
+            class="rc-btn rc-btn--one"
+            data-modal-trigger="modal-example1">
+            ЗАЛИШИТИ ЗАЯВКУ</button
+          ><br />
+          <h2 class="rc-alpha" style="margin-top: 25px">ЯК ВИТРАТИТИ БАЛИ?</h2>
+        </div>
+      </div>
+
+      <div class="rc-column">
+        <picture>
+          <source
+            srcset="images/20241014_rc_ua_trainers_main.jpg"
+            media="(min-width: 1500px)" />
+          <source
+            srcset="images/20241014_rc_ua_trainers_main.jpg"
+            media="(min-width: 600px)" />
+          <img
+            class="rc-full-width"
+            src="images/20241014_rc_ua_trainers_main.jpg"
+            alt="#" />
+        </picture>
+      </div>
+    </div>
+    <div
+      class="rc-layout-container rc-one-column rc-max-width--xl rc-content-h-middle">
+      <div class="rc-column">
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>150</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/travel_bag.png"
+                    alt="Дорожня сумочка" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Дорожня сумочка<br /><strong>150 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>300</span>
+                    </p>
+                  </div>
+                  <img src="../bonus/images/towel.png" alt="Рушник" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Рушник<br /><strong>300 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>100</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/shopper.png"
+                    alt="Сумочка для шопінгу" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Сумочка для шопінгу<br /><strong>100 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>70</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-myska-dlya-podorosziv.jpg"
+                    alt="Миска для подорожей Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Миска для подорожей<br />14x10 см<br /><strong>70 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>100</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-PULLER%20micro.png"
+                    alt="PULLER micro Ø12,5 см - тренувальний снаряд для дрібних порід собак Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PULLER micro Ø12,5 см - тренувальний снаряд для дрібних порід
+                собак<br /><strong>100 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>150</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-PULLER%20mini.png"
+                    alt="PULLER mini Ø18 см - тренувальний снаряд для дрібних порід собак Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PULLER mini Ø18 см - тренувальний снаряд для дрібних порід
+                собак<br /><strong>150 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>250</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-PULLER%20medium.png"
+                    alt="PULLER midi Ø20 см - тренувальний снаряд для собак середніх і дрібних порід Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PULLER midi Ø20 см - тренувальний снаряд для собак середніх і
+                дрібних порід<br /><strong>250 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>300</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-PULLER%20standart.png"
+                    alt="PULLER Standard Ø28 см - тренувальний снаряд для середніх і великих порід собак порід Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PULLER Standard Ø28 см - тренувальний снаряд для середніх і
+                великих порід собак<br /><strong>300 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>180</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-kosmetychka.jpg"
+                    alt="Косметичка-несессер тревел Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Косметичка-несессер<br /><strong>180 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>200</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-shleya-dog-621601565.png"
+                    alt="Шлея для собак Графіті з QR паспортом Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Шлея для собак "Графіті" з QR паспортом<br />розмір: S (40-55),
+                ширина 15 мм<br /><strong>200 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>200</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-shleya-dog-621601566.png"
+                    alt="Шлея для собак Кавун з QR паспортом Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Шлея для собак "Кавун" з QR паспортом<br />розмір: S (40-55),
+                ширина 15 мм<br /><strong>200 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>200</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-shleya-dog-621601567.png"
+                    alt="Шлея для собак Супермен з QR паспортом Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Шлея для собак "Супермен" з QR паспортом<br />розмір: S (40-55),
+                ширина 15 мм<br /><strong>200 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>250</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-shleya-dog-621601568.png"
+                    alt="Шлея для собак Графіті з QR паспортом Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Шлея для собак "Графіті" з QR паспортом<br />розмір: М (50-80),
+                ширина 20 мм<br /><strong>250 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>250</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-shleya-dog-621601569.png"
+                    alt="Шлея для собак Кавун з QR паспортом Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Шлея для собак "Кавун" з QR паспортом<br />розмір: М (50-80),
+                ширина 20 мм<br /><strong>250 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>250</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-shleya-dog-621601570.png"
+                    alt="Шлея для собак Супермен з QR паспортом Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Шлея для собак "Супермен" з QR паспортом<br />розмір: М (50-80),
+                ширина 20 мм<br /><strong>250 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>300</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-shleya-dog-621601571.png"
+                    alt="Шлея для собак Графіті з QR паспортом Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Шлея для собак "Графіті" з QR паспортом<br />розмір: L (60-90),
+                ширина 25 мм<br /><strong>300 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>300</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-shleya-dog-621601572.png"
+                    alt="Шлея для собак Кавун з QR паспортом Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Шлея для собак "Кавун" з QR паспортом<br />розмір: L (60-90),
+                ширина 25 мм<br /><strong>300 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>300</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-shleya-dog-621601573.png"
+                    alt="Шлея для собак Супермен з QR паспортом Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Шлея для собак "Супермен" з QR паспортом<br />розмір: L (60-90),
+                ширина 25 мм<br /><strong>300 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>450</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/kylymok-oholodszuyuchiy.jpg"
+                    alt="Охолоджуючий килимок маленький Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Охолоджуючий килимок<br />маленький<br /><strong
+                  >450 балів</strong
+                >
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>500</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-pidstylka.jpg"
+                    alt="Підстилка прорезинена" />
+                </picture>
+              </div>
+
+              <p style="text-align: center">
+                Підстилка прорезинена, 70х120 см<br /><strong>500 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>1300</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-leszanka.jpg"
+                    alt="Лежанка розмір XXL Royal Canin" />
+                </picture>
+              </div>
+
+              <p style="text-align: center">
+                Лежанка<br />розмір XXL (110х70 см)<br /><strong
+                  >1300 балів</strong
+                >
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>1300</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-lejak-velur-M.png"
+                    alt="Лежак Velur М розмір: 70X50 см" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Лежак Velur М<br />розмір: 70X50 см<br /><strong
+                  >1300 балів</strong
+                >
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>1500</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/royalcanin-lejak-velur-L.png"
+                    alt="Лежак Velur L розмір: 90X60 см" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Лежак Velur L<br />розмір: 90X60 см<br /><strong
+                  >1500 балів</strong
+                >
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>100</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/eva.png"
+                    alt="Подарунковий сертифікат Єва 100 грн" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Подарунковий сертифікат Єва 100 грн<br /><strong
+                  >100 балів</strong
+                >
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>300</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/eva.png"
+                    alt="Подарунковий сертифікат Єва 300 грн" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Подарунковий сертифікат Єва 300 грн<br /><strong
+                  >300 балів</strong
+                >
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>100</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/silpo.png"
+                    alt="Подарунковий сертифікат Сільпо 100 грн" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Подарунковий сертифікат Сільпо 100 грн<br /><strong
+                  >100 балів</strong
+                >
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>200</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/silpo.png"
+                    alt="Подарунковий сертифікат Сільпо 200 грн" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Подарунковий сертифікат Сільпо 200 грн<br /><strong
+                  >200 балів</strong
+                >
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>500</span>
+                    </p>
+                  </div>
+                  <img
+                    src="../bonus/images/universal.svg"
+                    alt="Універсальний подарунковий сертифікат Giftmall номіналом 500грн" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                <a href="https://giftmall.com.ua/uk/" rel="nofollow"
+                  >Універсальний сертифікат Giftmall</a
+                >
+                <br /><strong>500 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>150</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/rc-prodog_povidetc.jpg"
+                    alt="PRO Dog Train повідець 1,5 м" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PRO Dog Train повідець 1,5 м<br /><strong>150 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>200</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/rc-prodog_povidetc.jpg"
+                    alt="PRO Dog Train повідець 2 м" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PRO Dog Train повідець 2 м<br /><strong>200 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>300</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/rc-prodog_povidetc.jpg"
+                    alt="PRO Dog Train повідець 3 м" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PRO Dog Train повідець 3 м<br /><strong>300 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>250</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/rc-prodog_nashiynyk.jpg"
+                    alt="PRO Dog Train нашийник 40-50" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PRO Dog Train нашийник 40-50<br /><strong>250 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>700</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/rc-prodog_shleya.jpg"
+                    alt="PRO Dog Train шлея S" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PRO Dog Train шлея S<br /><strong>700 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>700</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/rc-prodog_shleya.jpg"
+                    alt="PRO Dog Train шлея M" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PRO Dog Train шлея M<br /><strong>700 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>750</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/rc-prodog_shleya.jpg"
+                    alt="PRO Dog Train шлея L" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PRO Dog Train шлея L<br /><strong>750 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>1500</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/rc-prodog_sziletka.jpg"
+                    alt="PRO Dog Train жилет для дрес" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PRO Dog Train жилет для дрес<br /><strong>1500 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>1000</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/rc-prodog_shtany.jpg"
+                    alt="PRO Dog Train штани для дрес" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PRO Dog Train штани для дрес<br /><strong>1000 балів</strong>
+              </p>
+            </div>
+
+            <!--              <div class="slider__item">
+                <div class="class">
+                  <picture class="">
+                    <div class="points">
+                      <p class="rc-content-h-middle rc-vertical-align correct"><span>3000</span></p>
+                    </div>
+                    <img src="images/rc-prodog_barier.jpg" alt="PRO Dog Train бар’єр 1х1,5 м" />
+                  </picture>
+                </div>
+                <p style="text-align: center;">PRO Dog Train бар’єр 1х1,5 м</br><strong>3000 балів</strong></p>
+              </div>
+
+
+
+              <div class="slider__item">
+                <div class="class">
+                  <picture class="">
+                    <div class="points">
+                      <p class="rc-content-h-middle rc-vertical-align correct"><span>5000</span></p>
+                    </div>
+                    <img src="images/rc-prodog_gorka.jpg" alt="PRO Dog Train горка 1,98х1,5 м" />
+                  </picture>
+                </div>
+                <p style="text-align: center;">PRO Dog Train горка 1,98х1,5 м</br><strong>5000 балів</strong></p>
+              </div>
+
+
+              <div class="slider__item">
+                <div class="class">
+                  <picture class="">
+                    <div class="points">
+                      <p class="rc-content-h-middle rc-vertical-align correct"><span>3000</span></p>
+                    </div>
+                    <img src="images/rc-prodog_ukryttya.jpg" alt="PRO Dog Train укриття (стандарт IGP)" />
+                  </picture>
+                </div>
+                <p style="text-align: center;">PRO Dog Train укриття (стандарт IGP)</br><strong>3000 балів</strong></p>
+              </div>-->
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>200</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/royalcanin-sumka-dlya-dresyruvannya.jpg"
+                    alt="Сумка для дресирування" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Сумка для дресирування<br /><strong>200 балів</strong>
+              </p>
+            </div>
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>350</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/royalcanin-container15kg.jpg"
+                    alt="Контейнер для зберігання корму білий" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                Контейнер для зберігання корму білий<br /><strong
+                  >350 балів</strong
+                >
+              </p>
+            </div>
+
+            <!--<div class="slider__item " >
+                <div class="class">
+                  <picture class="">
+                    <div class="points">
+                      <p class="rc-content-h-middle rc-vertical-align correct"><span>200</span></p>
+                    </div>
+                    <img src="images/royalcanin-container20kg.jpg" alt="Контейнер для зберігання корму червоний" />
+                  </picture>
+                </div>
+                <p style="text-align: center;">Контейнер для зберігання корму червоний</br><strong>400 балів</strong></p>
+              </div>-->
+
+            <div class="slider__item">
+              <div class="class">
+                <picture class="">
+                  <div class="points">
+                    <p class="rc-content-h-middle rc-vertical-align correct">
+                      <span>200</span>
+                    </p>
+                  </div>
+                  <img
+                    src="images/royalcanin-ryukzak.jpg"
+                    alt="Косметичка-несессер тревел Royal Canin" />
+                </picture>
+              </div>
+              <p style="text-align: center">
+                PRO Dog рюкзак<br /><strong>200 балів</strong>
+              </p>
+            </div>
+          </div>
+          <a
+            class="slider__control slider__control_left"
+            href="#"
+            role="button"></a>
+          <a
+            class="slider__control slider__control_right slider__control_show"
+            href="#"
+            role="button"></a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <!-- Footer 10.01.2020 -->
+  <footer class="rc-bg-colour--interface-dark" id="footer">
+    <div class="rc-max-width--xl rc-scroll--y">
+      <div class="rc-layout-container rc-three-column rc-md-up">
+        <div
+          class="rc-column rc-triple-width"
+          data-component="nav-track"
+          data-nav-name="Footer navigation">
+          <nav class="rc-menubar">
+            <ul class="rc-list rc-list--blank rc-list--inverse">
+              <li class="rc-list__item">
+                <!-- строка, что бы работали иконки -->
+                <div
+                  class="rc-carousel rc-carousel__gallery-image"
+                  data-zoom-container="product-description-carousel"
+                  data-zoom-factor="3"></div>
+                <!-- строка, что бы работали иконки -->
+                <a
+                  class="rc-list__link rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-pin--xs rc-brand3"
+                  data-modal-trigger="full-modal-example"
+                  >Де придбати</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="rc-column rc-text--right">
+          <a
+            class="rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-up--xs rc-brand3"
+            role="menuitem"
+            href="#">
+            На початок
+          </a>
+        </div>
+      </div>
+      <div class="rc-divider rc-md-up"></div>
+      <div class="rc-layout-container rc-three-column rc-padding-x--xs">
+        <div class="rc-column rc-double-width rc-padding-x--xs">
+          <nav
+            class="rc-padding-x--xs"
+            data-toggle-group="mobile"
+            data-toggle-effect="rc-expand--vertical"
+            role="navigation"
+            data-component="nav-track"
+            data-nav-name="Footer navigation">
+            <ul
+              class="rc-list rc-list--three-column rc-list--blank rc-list--align rc-list--inverse"
+              role="menubar">
+              <li class="rc-list__item rc-list__item--group" role="none">
+                <button
+                  class="rc-list__header"
+                  id="nav-footer-top-1"
+                  data-toggle="nav-footer-1"
+                  role="menuitem">
+                  Заводчикам собак
+                </button>
+                <ul
+                  class="rc-list rc-list--blank rc-list--align"
+                  id="nav-footer-1"
+                  aria-labelledby="nav-footer-top-1"
+                  role="menu">
+                  <li class="rc-list__item">
+                    <a
+                      href="/dogs/pro-products"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Products"
+                      >Раціони PRO для собак</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/dogs/kit-program"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Breeds"
+                      >Програма «Здоровий старт»</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/dogs/bonus"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Thinking of getting a cat"
+                      >Оновлена бонусна програма</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/dogs/learning"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Thinking of getting a dog"
+                      >Семінари, вебінари, конференції та інші навчальні заходи
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="rc-list__item rc-list__item--group" role="none">
+                <button
+                  class="rc-list__header"
+                  id="nav-footer-top-2"
+                  data-toggle="nav-footer-2"
+                  role="menuitem">
+                  Заводчикам котів
+                </button>
+                <ul
+                  class="rc-list rc-list--blank rc-list--align"
+                  id="nav-footer-2"
+                  aria-labelledby="nav-footer-top-2"
+                  role="menu">
+                  <li class="rc-list__item">
+                    <a
+                      href="/cats/pro-products"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Products"
+                      >Раціони PRO для котів</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/cats/kit-program"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Breeds"
+                      >Програма «Здоровий старт»</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/cats/bonus"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Thinking of getting a dog"
+                      >Оновлена бонусна програма</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="/cats/learning"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Thinking of getting a dog"
+                      >Семінари, вебінари, конференції та інші навчальні заходи
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="rc-list__item rc-list__item--group" role="none">
+                <button
+                  class="rc-list__header"
+                  id="nav-footer-top-3"
+                  data-toggle="nav-footer-4"
+                  role="menuitem">
+                  Про нас
+                </button>
+                <ul
+                  class="rc-list rc-list--blank rc-list--align"
+                  id="nav-footer-4"
+                  aria-labelledby="nav-footer-top-4"
+                  role="menu">
+                  <li class="rc-list__item">
+                    <a
+                      href="https://www.royalcanin.com/ua/about-us/our-history#Our history"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Our history"
+                      >Наша історія</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="https://www.royalcanin.com/ua/about-us/our-values#Our values"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Our values"
+                      >Наші цінності</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="https://www.royalcanin.com/ua/about-us/sustainability#Sustainability"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Sustainability"
+                      >Сталий розвиток</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="https://www.royalcanin.com/ua/about-us/quality-and-food-safety#Quality and food safety"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Quality and food safety"
+                      >Якість і безпека раціонів</a
+                    >
+                  </li>
+                  <li class="rc-list__item">
+                    <a
+                      href="https://breeders.royalcanin.com.ua/"
+                      class="rc-list__link"
+                      data-ref="nav-link"
+                      role="menuitem"
+                      title="Breeders programme"
+                      >Програма для заводчиків</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="rc-column rc-md-up"></div>
+      </div>
+      <div class="rc-layout-container rc-one-column rc-md-down">
+        <div class="rc-column rc-padding-x--none">
+          <a
+            class="rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-up--xs rc-brand3"
+            role="menuitem"
+            href="#">
+            На початок
+          </a>
+        </div>
+      </div>
+      <div class="rc-divider"></div>
+      <div
+        class="rc-layout-container rc-two-column rc-padding-x--xs rc-padding-y--sm">
+        <div class="rc-column">
+          <span class="rc-espilon rc-text--inverse"></span>
+          <p class="rc-text--inverse"></p>
+        </div>
+      </div>
+      <div class="rc-layout-container rc-two-column">
+        <div class="rc-column rc-padding--none">
+          <a
+            class="rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-mobile--xs rc-brand3"
+            role="menuitem"
+            href="tel:0 800 21 000 1"
+            >0 800 21 000 1</a
+          >
+          <a
+            href="/contacts/"
+            class="rc-btn rc-btn--inverse rc-btn--icon-label rc-icon rc-email--xs rc-brand3"
+            title=""
+            role="menuitem"
+            >Зв’яжіться з нами</a
+          >
+        </div>
+
+        <!-- OneTrust Cookies Settings button start -->
+        <button id="ot-sdk-btn" class="ot-sdk-show-settings">
+          Налаштування файлів cookie
+        </button>
+        <!-- OneTrust Cookies Settings button end -->
+      </div>
+    </div>
+  </footer>
+  <!-- Footer 4.11.2020 -->
+  <!--   показать часть футера с копирайтом  -->
+  <script src="https://footer.mars.com/js/footer.js.aspx?breeders-royalcanin-com-ua"></script>
+  >
+  <!--   показать часть футера с копирайтом  -->
+
+  <!--
+<div class="rc-shade rc-hidden" id="shade"></div>
+
+<aside role="modal" class="rc-modal rc-hidden rc-modal--full" data-modal-target="full-modal-example">
+  <div class="rc-modal__container">
+    <header class="rc-modal__header">
+      <button class="rc-btn rc-icon rc-btn--icon-label rc-modal__close rc-close--xs rc-iconography"
+      data-modal-trigger="full-modal-example">Закрити</button>
+    </header>
+    <section class="rc-modal__content rc-scroll--y rc-padding--none">
+      <div class="rc-margin-top--lg rc-padding-left--lg">
+        <h3 class="rc-gamma rc-modal__title">Контакти менеджерів</h3>
+        <p><strong>Для того, щоб долучитися до співпраці з «Рояль Канін Україна» у Вас має бути зареєстрований розплідник.</strong></p>
+
+        <h3 class="rc-gama">Київ та центральний регіон</h3>
+        <p>Олена Гончарова</br>
+        <a class="rc-styled-link" href="tel:+380503850335">+380 (50) 385 03 35</a></br>
+        Вт-Сб, 09:00-18:00</br>
+        <a class="rc-styled-link" href="mailto:olena.honcharova@royalcanin.com?subject=Я хочу придбати корм PUPPY PRO TECH">olena.honcharova@royalcanin.com</a></p>
+        <p>Григоров Олександр</br>
+        <a class="rc-styled-link" href="tel:+380504125948">+380 (50) 412 59 48</a></br>
+        Вт-Сб, 09:00-18:00</br>
+        <a class="rc-styled-link" href="mailto:oleksandr.hryhorov@royalcanin.com?subject=Я хочу придбати корм PUPPY PRO TECH">oleksandr.hryhorov@royalcanin.com</a></p>
+        <div class="rc-padding--sm"></div>
+
+        <h3 class="rc-gama">Харків, Донецька та Луганська область</h3>
+        <p>Анна Мамонова</br>
+        <a class="rc-styled-link" href="tel:+3800503600841">+380 (050) 360 08 41</a></br>
+        Вт-Сб, 09:00-18:00</br>
+        <a class="rc-styled-link" href="mailto:anna.mamonova@royalcanin.com?subject=Я хочу придбати корм PUPPY PRO TECH">anna.mamonova@royalcanin.com</a></p>
+        <div class="rc-padding--sm"></div>
+
+        <h3 class="rc-gama">Суми, Полтава, Кіровоград, Черкаси, Чернігів</h3>
+        <p>Станіслав Козленков</br>
+        <a class="rc-styled-link" href="tel:+3800501601943">+380 (050) 160 19 43</a></br>
+        Вт-Сб, 09:00-18:00</br>
+        <a class="rc-styled-link" href="mailto:stanislav.kozlenkov@royalcanin.com?subject=Я хочу придбати корм PUPPY PRO TECH">stanislav.kozlenkov@royalcanin.com</a></p>
+        <div class="rc-padding--sm"></div>
+
+        <h3 class="rc-gama">Одеса, Миколаїв, Херсон</h3>
+        <p>Анна Крамаренко</br>
+        <a class="rc-styled-link" href="tel:+3800503560524">+380 (050) 356 05 24</a></br>
+        Вт-Сб, 09:00-18:00</br>
+        <a class="rc-styled-link" href="mailto:hanna.kramarenko@royalcanin.com?subject=Я хочу придбати корм PUPPY PRO TECH">hanna.kramarenko@royalcanin.com</a></p>
+        <div class="rc-padding--sm"></div>
+
+        <h3 class="rc-gama">Дніпро, Запоріжжя</h3>
+        <p>Анна Вельможко</br>
+        <a class="rc-styled-link" href="tel:+380503250371">+380 (50) 325 03 71</a></br>
+        Вт-Сб, 09:00-18:00</br>
+        <a class="rc-styled-link" href="mailto:anna.velmozhko.external@royalcanin.com?subject=Я хочу придбати корм PUPPY PRO TECH">anna.velmozhko.external@royalcanin.com</a></p>
+        <div class="rc-padding--sm"></div>
+
+        <h3 class="rc-gama">Львів, Івано-Франківськ, Ужгород, Чернівці, Луцьк, Рівне, Тернопіль, Хмельницький, Вінниця, Житомир</h3>
+        <p>Руслана Горун</br>
+        <a class="rc-styled-link" href="tel:+380504101171">+380 (50) 410 11 71</a></br>
+        Вт-Сб, 09:00-18:00</br>
+        <a class="rc-styled-link" href="mailto:ruslana.gorun@royalcanin.com?subject=Я хочу придбати корм PUPPY PRO TECH">ruslana.gorun@royalcanin.com</a></p>
+      </div>
+      <div class="rc-padding-y--md rc-md-down"></div>
+      <div class="rc-padding-y--md rc-md-down"></div>
+      <div class="rc-padding-y--md rc-md-down"></div>
+    </section>
+  </div>
+</aside>
+
+  -->
+
+  <div class="rc-shade rc-hidden" id="shade"></div>
+
+  <aside
+    role="modal"
+    class="rc-modal rc-hidden rc-modal--full"
+    data-modal-target="modal-example1">
+    <div class="rc-modal__container rc-padding-y--lg">
+      <header class="rc-modal__header" style="padding-top: 120px">
+        <button
+          class="rc-btn rc-icon rc-btn--icon-label rc-modal__close rc-close--xs rc-iconography"
+          data-modal-trigger="modal-example1">
+          Закрити
+        </button>
+      </header>
+      <section
+        class="rc-modal__content rc-scroll--y rc-padding-bottom--none"
+        style="padding-top: 150px">
+        <div class="rc-full-width rc-padding--none">
+          <h2 class="rc-beta">Реєстрація:&nbsp;&nbsp;</h2>
+          <form id="dogs_registration_form" role="form">
+            <div class="rc-layout-container rc-two-column rc-margin-bottom--md">
+              <div class="rc-column">
+                <div
+                  class="form-group rc-input column-wider"
+                  id="column-wider-names">
+                  <input
+                    type="text"
+                    class="rc-input__control"
+                    required=""
+                    name="names"
+                    class="form-control" />
+                  <label class="rc-input__label" for="name">
+                    <span class="rc-input__label-text">Ім'я</span>
+                  </label>
+                </div>
+
+                <div
+                  class="form-group rc-input column-wider"
+                  id="column-wider-secondName">
+                  <input
+                    type="text"
+                    class="rc-input__control"
+                    required=""
+                    name="secondName"
+                    class="form-control" />
+                  <label class="rc-input__label" for="secondName">
+                    <span class="rc-input__label-text">Прізвище</span>
+                  </label>
+                </div>
+
+                <div
+                  class="form-group rc-input column-wider"
+                  id="column-wider-region">
+                  <span class="rc-select" id="span-wider-region">
+                    <select
+                      data-js-select=""
+                      id="region"
+                      required=""
+                      name="region">
+                      <option selected="" disabled="" value="">
+                        Ваш регіон (область)
+                      </option>
+                      <option value="3">
+                        Київська правий берег (Область правого берегу),
+                        Житомирська
+                      </option>
+                      <option value="8">
+                        Київська лівий берег (Область лівого берегу), Вінницька
+                      </option>
+                      <option value="7">
+                        Одеська, Миколаївська, Херсонська, Черкаська,
+                        Кропивницька
+                      </option>
+                      <option value="64">Дніпровська, Запоріжська</option>
+                      <option value="50">
+                        Чернігівська, Сумська, Полтавська, Харківська
+                      </option>
+                      <option value="9">
+                        Волинська, Закарпатська, Івано-Франківська, Львівська,
+                        Рівненська, Тернопільська, Хмельницька, Чернівецька
+                      </option>
+                    </select>
+                  </span>
+                  <p class="rc-tooltip">
+                    Ця інформація важлива. Ваша заявка буде направлена саме на
+                    того менеджера, який відповідає за ваш регіон
+                  </p>
+                </div>
+
+                <div
+                  class="form-group rc-input column-wider"
+                  id="column-wider-abouts">
+                  <input
+                    type="text"
+                    class="rc-input__control"
+                    required=""
+                    name="abouts"
+                    class="form-control" />
+                  <label class="rc-input__label" for="cities">
+                    <span class="rc-input__label-text">Місто проживання</span>
+                  </label>
+                </div>
+                <!--  <p class="rc-tooltip">Будь ласка, за можливості старайтеся не використовувати електронні адреси сервісів, таких як: mail.ru, bk.ru, yandex.ru/ua та подібні. В деяких випадках ми не зможемо отримати ваші реєстраційні дані. Дякуємо за розуміння.</p>-->
+              </div>
+
+              <div class="rc-column">
+                <div
+                  class="form-group rc-input column-wider"
+                  id="column-wider-phones">
+                  <input
+                    type="number"
+                    class="rc-input__control"
+                    required=""
+                    name="phones"
+                    class="form-control" />
+                  <label class="rc-input__label" for="number">
+                    <span class="rc-input__label-text">Номер телефону</span>
+                  </label>
+                </div>
+
+                <div
+                  class="form-group rc-input column-wider"
+                  id="column-wider-emails">
+                  <input
+                    type="email"
+                    class="rc-input__control"
+                    required=""
+                    name="emails"
+                    class="form-control" />
+                  <label class="rc-input__label" for="id-email">
+                    <span class="rc-input__label-text">E-mail</span>
+                  </label>
+                </div>
+
+                <div
+                  class="form-group rc-input column-wider"
+                  id="column-wider-referals">
+                  <input
+                    type="text"
+                    class="rc-input__control"
+                    name="referals"
+                    class="form-control"
+                    style="padding-bottom: 20px" />
+                  <label class="rc-input__label" for="name">
+                    <span class="rc-input__label-text"
+                      >Мені порекомендували (id-Партнера)</span
+                    >
+                  </label>
+                </div>
+
+                <!-- добавление элемента div -->
+                <div
+                  class="g-recaptcha rc-input__control"
+                  required=""
+                  data-sitekey="6Lc_u8IUAAAAAAzDxRjk7smgfuYO9fnwqvs9zlec"></div>
+
+                <!-- элемент для вывода ошибок -->
+                <div class="text-danger" id="recaptchaError"></div>
+
+                <!-- js-скрипт гугл капчи -->
+                <script src="../../recaptcha/api.js"></script>
+
+                <div
+                  class="form-group rc-input rc-margin-y--sm rc-content-v-left">
+                  <input
+                    type="submit"
+                    class="rc-btn rc-btn--two"
+                    id="formChange"
+                    value="ВІДПРАВИТИ" />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </aside>
+
+  <aside
+    role="modal"
+    class="rc-modal rc-hidden rc-modal--full"
+    data-modal-target="full-modal-example">
+    <div class="rc-modal__container">
+      <header class="rc-modal__header">
+        <button
+          class="rc-btn rc-icon rc-btn--icon-label rc-modal__close rc-close--xs rc-iconography"
+          data-modal-trigger="full-modal-example">
+          Закрити
+        </button>
+      </header>
+      <section class="rc-modal__content rc-scroll--y rc-padding--none">
+        <div class="rc-margin-top--lg rc-padding-left--lg">
+          <h3 class="rc-gamma rc-modal__title">Контакти менеджерів</h3>
+          <p>
+            <strong
+              >Для того, щоб долучитися до співпраці з «Рояль Канін Україна»<br />
+              у Вас має бути зареєстрований розплідник або наявне посвідчення
+              для інструктора-кінолога.</strong
+            >
+          </p>
+          <br />
+
+          <h3 class="rc-gama">Київ (правий берег), Житомир</h3>
+          <p>
+            Руслана Горун<br />
+            <a class="rc-styled-link" href="tel:+380503850335"
+              >+380 (50) 385 03 35</a
+            ><br />
+            Пн-Пт, 09:00-18:00<br />
+            <a
+              class="rc-styled-link"
+              href="/cdn-cgi/l/email-protection#d7a5a2a4bbb6b9b6f9b0b8a5a2b997a5b8aeb6bbb4b6b9beb9f9b4b8bae8a4a2b5bdb2b4a3ea0740076507620657076a0762076a076a0658f707630769f7076b0762076a076207630761076206570767f785b8aeb6bbf794b6b9beb9"
+              ><span
+                class="__cf_email__"
+                data-cfemail="cab8bfb9a6aba4abe4ada5b8bfa48ab8a5b3aba6a9aba4a3a4e4a9a5a7"
+                >[email&#160;protected]</span
+              ></a
+            >
+          </p>
+          <br />
+
+          <h3 class="rc-gama">Київ (лівий берег), Вінниця</h3>
+          <p>
+            Салтикова Оксана<br />
+            <a class="rc-styled-link" href="tel:+380504125948"
+              >+380 (50) 412 59 48</a
+            ><br />
+            Пн-Пт, 09:00-18:00<br />
+            <a
+              class="rc-styled-link"
+              href="/cdn-cgi/l/email-protection#117e7a62707f703f62707d65687a7e677051637e68707d72707f787f3f727e7c2e6264737b7472652cc186c1a3c1a4c091c1acc1a4c1acc1acc09e31c1a5c1af31c1adc1a4c1acc1a4c1a5c1a7c1a4c091c1a131437e68707d3152707f787f"
+              ><span
+                class="__cf_email__"
+                data-cfemail="7817130b191619560b19140c0113170e19380a170119141b19161116561b1715"
+                >[email&#160;protected]</span
+              ></a
+            >
+          </p>
+          <br />
+
+          <h3 class="rc-gama">
+            Одеса, Миколаїв, Херсон, Черкаси, Кропивницький
+          </h3>
+          <p>
+            Анна Крамаренко<br />
+            <a class="rc-styled-link" href="tel:+3800503560524"
+              >+380 (050) 356 05 24</a
+            ><br />
+            Пн-Пт, 09:00-18:00<br />
+            <a
+              class="rc-styled-link"
+              href="/cdn-cgi/l/email-protection#90f8f1fefef1befbe2f1fdf1e2f5fefbffd0e2ffe9f1fcf3f1fef9febef3fffdafe3e5f2faf5f3e4ad4007402240254110402d4025402d402d411fb04024402eb0402c4025402d402540244026402541104020b0c2ffe9f1fcb0d3f1fef9fe"
+              ><span
+                class="__cf_email__"
+                data-cfemail="046c656a6a652a6f7665696576616a6f6b44766b7d656867656a6d6a2a676b69"
+                >[email&#160;protected]</span
+              ></a
+            >
+          </p>
+          <br />
+
+          <h3 class="rc-gama">Дніпро, Запоріжжя</h3>
+          <p>
+            Катерина Дордієнко<br />
+            <a class="rc-styled-link" href="tel:+380504187591"
+              >+380 (50) 418 75 91</a
+            ><br />
+            Пн-Пт, 09:00-18:00<br />
+            <a
+              class="rc-styled-link"
+              href="/cdn-cgi/l/email-protection#d6bdb7a2b3a4afb8b7f8b2b9a4b2bfbfb3b8bdb996a4b9afb7bab5b7b8bfb8f8b5b9bbe9a5a3b4bcb3b5a2eb0641066406630756066b0663066b066b0759f606620668f6066a0663066b066306620660066307560666f684b9afb7baf695b7b8bfb8"
+              ><span
+                class="__cf_email__"
+                data-cfemail="82e9e3f6e7f0fbece3ace6edf0e6ebebe7ece9edc2f0edfbe3eee1e3ecebecace1edef"
+                >[email&#160;protected]</span
+              ></a
+            >
+          </p>
+          <br />
+
+          <h3 class="rc-gama">Чернігів, Суми, Полтава, Харків</h3>
+          <p>
+            Наталія Воробйова<br />
+            <a class="rc-styled-link" href="tel:+380503336624"
+              >+380 (50) 333 66 24</a
+            ><br />
+            Пн-Пт, 09:00-18:00<br />
+            <a
+              class="rc-styled-link"
+              href="/cdn-cgi/l/email-protection#412f2035202d2828206f372e332e23282e372001332e38202d22202f282f6f222e2c7e3234232b2422357c91d691f391f490c191fc91f491fc91fc90ce6191f591ff6191fd91f491fc91f491f591f791f490c191f161132e38202d6102202f282f"
+              ><span
+                class="__cf_email__"
+                data-cfemail="4b252a3f2a2722222a653d2439242922243d2a0b3924322a27282a25222565282426"
+                >[email&#160;protected]</span
+              ></a
+            >
+          </p>
+          <br />
+
+          <h3 class="rc-gama">
+            Львів, Івано-Франківськ, Ужгород, Чернівці, Луцьк, Рівне, Тернопіль,
+            Хмельницький
+          </h3>
+          <p>
+            Щербань Іванна<br />
+            <a class="rc-styled-link" href="tel:+380504101171"
+              >+380 (50) 410 11 71</a
+            ><br />
+            Пн-Пт, 09:00-18:00<br />
+            <a
+              class="rc-styled-link"
+              href="/cdn-cgi/l/email-protection#214857404f4f400f52494249445343404f61534e58404d42404f484f0f424e4c1e5254434b4442551cf1b6f193f194f0a1f19cf194f19cf19cf0ae01f195f19f01f19df194f19cf194f195f197f194f0a1f19101734e58404d0162404f484f"
+              ><span
+                class="__cf_email__"
+                data-cfemail="a7ced1c6c9c9c689d4cfc4cfc2d5c5c6c9e7d5c8dec6cbc4c6c9cec989c4c8ca"
+                >[email&#160;protected]</span
+              ></a
+            >
+          </p>
+          <div class="rc-padding--sm"></div>
+
+          <!--<h3 class="rc-gama">Харків, Донецька та Луганська область</h3>
+                    <h3 class="rc-gama">Суми, Полтава, Кіровоград, Черкаси, Чернігів</h3>
+                    <p>Анна Мамонова</br>
+                    <a class="rc-styled-link" href="tel:+3800503600841">+380 (050) 360 08 41</a></br>
+                    Пн-Пт, 09:00-18:00</br>
+                    <a class="rc-styled-link" href="mailto:anna.mamonova@royalcanin.com?subject=Звернення до менеджера Royal Canin">anna.mamonova@royalcanin.com</a></p>
+                    <div class="rc-padding--sm"></div>
+                    -->
+
+          <!--
+                      <h3 class="rc-gama">Суми, Полтава, Кіровоград, Черкаси, Чернігів</h3>
+                    <p>Станіслав Козленков</br>
+                    <a class="rc-styled-link" href="tel:+3800501601943">+380 (050) 160 19 43</a></br>
+                    Пн-Пт, 09:00-18:00</br>
+                    <a class="rc-styled-link" href="mailto:stanislav.kozlenkov@royalcanin.com?subject=Звернення до менеджера Royal Canin">stanislav.kozlenkov@royalcanin.com</a></p>
+                    <div class="rc-padding--sm"></div>
+                  -->
+        </div>
+        <div class="rc-padding-y--md rc-md-down"></div>
+        <div class="rc-padding-y--md rc-md-down"></div>
+        <div class="rc-padding-y--md rc-md-down"></div>
+      </section>
+    </div>
+  </aside>
+
+  <script
+    data-cfasync="false"
+    src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+</body>
+<script>
+  "use strict";
+  var multiItemSlider = (function () {
+    return function (selector, config) {
+      var _mainElement = document.querySelector(selector), // основный элемент блока
+        _sliderWrapper = _mainElement.querySelector(".slider__wrapper"), // обертка для .slider-item
+        _sliderItems = _mainElement.querySelectorAll(".slider__item"), // элементы (.slider-item)
+        _sliderControls = _mainElement.querySelectorAll(".slider__control"), // элементы управления
+        _sliderControlLeft = _mainElement.querySelector(
+          ".slider__control_left"
+        ), // кнопка "LEFT"
+        _sliderControlRight = _mainElement.querySelector(
+          ".slider__control_right"
+        ), // кнопка "RIGHT"
+        _wrapperWidth = parseFloat(getComputedStyle(_sliderWrapper).width), // ширина обёртки
+        _itemWidth = parseFloat(getComputedStyle(_sliderItems[0]).width), // ширина одного элемента
+        _positionLeftItem = 0, // позиция левого активного элемента
+        _transform = 0, // значение транфсофрмации .slider_wrapper
+        _step = (_itemWidth / _wrapperWidth) * 100, // величина шага (для трансформации)
+        _items = []; // массив элементов
+      // наполнение массива _items
+      _sliderItems.forEach(function (item, index) {
+        _items.push({
+          item: item,
+          position: index,
+          transform: 0,
+        });
+      });
+
+      var position = {
+        getMin: 0,
+        getMax: _items.length - 1,
+      };
+
+      var _transformItem = function (direction) {
+        if (direction === "right") {
+          if (
+            _positionLeftItem + _wrapperWidth / _itemWidth - 1 >=
+            position.getMax
+          ) {
+            return;
+          }
+          if (!_sliderControlLeft.classList.contains("slider__control_show")) {
+            _sliderControlLeft.classList.add("slider__control_show");
+          }
+          if (
+            _sliderControlRight.classList.contains("slider__control_show") &&
+            _positionLeftItem + _wrapperWidth / _itemWidth >= position.getMax
+          ) {
+            _sliderControlRight.classList.remove("slider__control_show");
+          }
+          _positionLeftItem++;
+          _transform -= _step;
+        }
+        if (direction === "left") {
+          if (_positionLeftItem <= position.getMin) {
+            return;
+          }
+          if (!_sliderControlRight.classList.contains("slider__control_show")) {
+            _sliderControlRight.classList.add("slider__control_show");
+          }
+          if (
+            _sliderControlLeft.classList.contains("slider__control_show") &&
+            _positionLeftItem - 1 <= position.getMin
+          ) {
+            _sliderControlLeft.classList.remove("slider__control_show");
+          }
+          _positionLeftItem--;
+          _transform += _step;
+        }
+        _sliderWrapper.style.transform = "translateX(" + _transform + "%)";
+      };
+
+      // обработчик события click для кнопок "назад" и "вперед"
+      var _controlClick = function (e) {
+        if (e.target.classList.contains("slider__control")) {
+          e.preventDefault();
+          var direction = e.target.classList.contains("slider__control_right")
+            ? "right"
+            : "left";
+          _transformItem(direction);
+        }
+      };
+
+      var _setUpListeners = function () {
+        // добавление к кнопкам "назад" и "вперед" обрботчика _controlClick для событя click
+        _sliderControls.forEach(function (item) {
+          item.addEventListener("click", _controlClick);
+        });
+      };
+
+      // инициализация
+      _setUpListeners();
+
+      return {
+        right: function () {
+          // метод right
+          _transformItem("right");
+        },
+        left: function () {
+          // метод left
+          _transformItem("left");
+        },
+      };
+    };
+  })();
+
+  var slider = multiItemSlider(".slider");
+</script>
+
+<script>
+  function del() {
+    console.log(hashtag);
+    var mod = document.getElementById("modal-thanks");
+    mod.classList.remove("rc-hidden");
+    var mod1 = document.getElementById("shade");
+    mod1.classList.remove("rc-hidden");
+  }
+
+  function delShade() {
+    function inner() {
+      var mod1 = document.querySelectorAll(".rc-shade")[3];
+      mod1.removeAttribute("class");
+      var shade = document.querySelectorAll(".rc-shade")[1];
+      shade.removeAttribute("class");
+    }
+    setTimeout(inner, 10);
+  }
+
+  var hashtag = location.hash;
+  if (hashtag == "#registration") {
+    setTimeout(del, 2000);
+  }
+
+  // var button = document.getElementById("formChange");
+  // button.onclick = function(){
+  //     console.log('button clicked');
+  //     xhttp.open("POST", "email1_test.php", true);
+  //     xhttp.setRequestHeader("Content-type", "application/json");
+  //     xhttp.send("fname=Henry&lname=Ford");
+  // }
+
+  const form = document.getElementById("dogs_registration_form");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const XHR = new XMLHttpRequest();
+    const FD = new FormData(form);
+    XHR.addEventListener("load", function (event) {
+      if (event.target.responseText.trim() !== "") {
+        alert(event.target.responseText);
+      } else window.location.replace("index.php#registration");
+    });
+    XHR.addEventListener("error", function (event) {
+      alert(
+        "Просимо вибачення, але виникли проблема з сайтом. Спробуйте, будь ласка,пізніше."
+      );
+    });
+    XHR.open("POST", "email1.php");
+    XHR.send(FD);
+  });
+
+  window.onload = function () {
+    var $recaptcha = document.querySelector("#g-recaptcha-response");
+
+    if ($recaptcha) {
+      $recaptcha.setAttribute("required", "required");
+    }
+  };
+</script>
+<style>
+  #column-wider-referals, #column-wider-emails, #column-wider-phones, #column-wider-abouts, #column-wider-region, #column-wider-secondName, #column-wider-names, #span-wider-region {
+      max-width: 100%;!important;
+  }
+</style>
