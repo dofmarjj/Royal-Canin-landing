@@ -336,11 +336,11 @@
   color: #e2001a;
 }
 
-.rc-list .product-item:hover {
+/* .rc-list .product-item:hover {
   cursor: pointer;
   text-decoration: underline;
   color: #e2001a;
-}
+} */
 
 .points__description {
   width: 100%;
